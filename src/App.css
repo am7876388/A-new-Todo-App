@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 1vh;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: #555;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#Container{
+    background-color: #fff;
+    width: 80rem;
+    border: solid 0.1rem #ddd;
+    border-radius: 0.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+#Container h1{
+    font-size: 6rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+#InputValue{
+    width: 96%;
+    height: 3.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.7rem;
+    line-height: 0.1rem;
+    background-color: #fff;
+    border: solid 0.1rem #ccc;
+}
+#Bottom{
+    border-top: 0.1rem solid #ddd;
+    background-color: #f4fce8;
+    padding: 1.2rem 2rem;
+    color: #777;
+    height: 5rem;
+    border-top: 0.1rem solid #ddd;
+    margin: 0 -2rem -1rem -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Left{
+    display: flex;
+    align-items: center;
+}
+#Button-container{
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: solid 0.1rem #ccc;
+}
+#Button-container a{
+    margin: 0 0.5rem;
+}
+#Button-container img{
+    width:3.5rem;
+    height:3.5rem;
+}
+#Total-Items{
+ font-size: 2rem;   
+}
+#Other-Buttons{
+    display: flex;
+}
+#Other-Buttons a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #555;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem;
+    border: solid 0.1rem transparent;
+}
+#Item-container{
+    width: 100%;
+}
+.Items{
+    padding-top:3rem;
+    padding-bottom:3rem;
+    border-bottom: solid 0.1rem #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.Items img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 1rem;
+}
+.Items-Right button{
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+}
+.Items-Left input{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.Items-Left{
+    display: flex;
+    align-items: center;
+}
+.Items-Data{
+    font-size: 2.2rem;
+    margin-left: 2rem;
+}
+.Items-Data input{
+    width: 55rem;
+    height: 4rem;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 1 !important;
+}
+#Other-Buttons button{
+    border: solid 0.1rem transparent;
+    cursor: pointer;
+}
+.OButtons:hover{
+    border-color: rgba(175, 47, 47, 0.2) !important;
+}
