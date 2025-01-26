@@ -1,9 +1,9 @@
-import {createContext, useState } from "react";
+import {createContext, useState } from "react";//Importing Hooks
 export const Context = createContext();
-import Done from "./assets/Done.svg";
-import Edit from "./assets/Edit.svg";
-function DataProvider({children}){
-    const [Data,setData] = useState([])
+import Done from "../assets/Done.svg";//Importing Image
+import Edit from "../assets/Edit.svg";//Importing Image
+function DataProvider({children}){//A data provider function to provide data to all of the other components
+    const [Data,setData] = useState([])//Using States to store the data
     const [Display,setDisplay] = useState([]);
     const [Type,setType] = useState(0);
     const [AddorSearch,setAddorSearch] = useState(0);
@@ -11,13 +11,14 @@ function DataProvider({children}){
     function Addition(){
     if(AddorSearch === 0){
      const Input = document.getElementById("InputValue").value;
-     if(Input){
+     const FinalInput = Input.trim();
+     if(FinalInput){
      setData(() => [...Data,Input]);
      setDisplay(() =>[...Display,1]);
     }
 }
  }
- function Checkboxes(ind,data){
+ function Checkboxes(ind,data){//Checking if data is completed or not
  if(Display[ind] === 2){
     return(<><input type="checkbox"  className="Completed" defaultChecked = {true} onChange={Completed}/>
              <div className="Items-Data" style={{textDecoration:"line-through"}}>{data}</div></>);
@@ -27,18 +28,18 @@ function DataProvider({children}){
             <div className="Items-Data" style={{textDecoration:"None"}}>{data}</div></>);
  }
  }
- function AdditonMode(e){
+ function AdditonMode(e){//Adding Data to the List
     if(e.key === "Enter"){
     setAddorSearch(0);
     Addition();
 }
  }
- function Searching(e){
+ function Searching(e){//Searching Data
   if(AddorSearch === 1){
     setSearchValue(e.target.value);
   }  
  }
- function Completed(e){
+ function Completed(e){//Showing completed data
     const num1 = e.target.parentElement.children;
     const num2 = e.target.closest(".Items");
     const num3 = num2.id;

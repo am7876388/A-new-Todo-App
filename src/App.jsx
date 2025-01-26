@@ -1,11 +1,11 @@
-import Plus from "./assets/Plus.svg"
-import Search from "./assets/search.svg"
-import Items from "./Items"
-import { Context } from "./Context"
-import { useContext } from "react"
-import TotalItems from "./Functions";
+import Plus from "./assets/Plus.svg"//Importing Image
+import Search from "./assets/search.svg"//Importing Image
+import Items from "./TodoList"//Importing Component
+import { Context } from "./Utils/Context"//Importing Functions
+import { useContext } from "react"//Importing Hooks
+import TotalItems from "./Functions";//Importing Functions
 function App() {
-  const {AdditonMode,Complete,Active,All,Searching,SearchMode,setAddorSearch} = useContext(Context);
+  const {AdditonMode,Complete,Active,All,Searching,setAddorSearch} = useContext(Context);
   return (
 <>
 <div id="Container">
