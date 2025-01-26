@@ -6,6 +6,7 @@ This is a simple To-Do List application built using React and Vite. The applicat
 - Delete tasks.
 - Mark tasks as completed.
 - Edit existing tasks.
+To Add please press Enter
 
 ## Features
 - **Functional Components**: The app uses functional components for simplicity and reusability.
