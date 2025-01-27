@@ -9,7 +9,7 @@ function Header(){
     return(<>
     <div id="Container">
   <h1>THINGS TO DO</h1>
-  <input type="text" id="InputValue" placeholder="Add New" onChange = {Searching} onKeyDown = {AdditonMode}/>
+  <input type="text" id="InputValue" placeholder="Add New" onChange = {Searching} onKeyDown = {AdditonMode} autoComplete="off"/>
   <div id = "Item-container">
     <Items/>
     </div>
