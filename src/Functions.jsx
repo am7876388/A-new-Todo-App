@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";//Importing Hooks
 export function Completed(e){//Function to mark a object as completed
-const num1 = e.target.parentElement.children;
+const num1 = e.target.parentElement.children;//Finding the The Parent of the checkbox which have been clicked
 for(let i = 0; i < num1.length; i++){
-    if(num1[i].className === "Items-Data") {num1[i].style.textDecoration = "line-through"}
+    if(num1[i].className === "Items-Data") {num1[i].style.textDecoration = "line-through"}//Decorating the Text with a slash on it
 }
 }
 function TotalItems(){//Count of total Items

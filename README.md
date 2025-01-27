@@ -1,28 +1,29 @@
 # To-Do List Application
 
 ## Overview
-This is a simple To-Do List application built using React and Vite. The application allows users to:
-- Add new tasks.
-- Delete tasks.
-- Mark tasks as completed.
-- Edit existing tasks.
-To Add please press Enter
+This is a simple To-Do List application built using **React** and **Vite**. The application allows users to:
+- **Add** new tasks by pressing **Enter** after typing in the input field.
+- **Delete** tasks by clicking the delete icon.
+- **Mark tasks as completed** by checking the checkbox next to each task.
+- **Edit** existing tasks by clicking the edit icon.
+- **Switch between Add and Search modes** using the **Plus** and **Search** icons.
+- **Categorize tasks** using the **All**, **Active**, and **Completed** buttons at the bottom.
 
 ## Features
-- **Functional Components**: The app uses functional components for simplicity and reusability.
-- **State and Props Management**: State is used to manage the list of tasks, and props are utilized to pass data between components.
-- **Dynamic Rendering**: The tasks are dynamically rendered using the `map` function, ensuring each task has a unique key.
-- **Event Handling**: Events are implemented for adding, editing, completing, and deleting tasks.
-- **Styling**: The app is styled using Tailwind CSS for a modern and responsive design.
-
-## Components
-1. **App**: The main component managing the overall state.
-2. **Header**: Displays the title of the application.
-3. **ToDoList**: Renders the list of tasks dynamically.
-4. **ToDoItem**: Represents each individual task.
+- **Add New Task**: Type a task in the input field and press **Enter** to add it to the list.
+- **Delete Task**: Click the delete icon (🗑️) next to a task to remove it from the list.
+- **Mark as Completed**: Check the checkbox next to a task to mark it as completed. The task will be crossed out.
+- **Edit Task**: Click the edit icon (✏️) next to a task to edit its content. After editing, click the done icon (✔️) to save the changes.
+- **Switch Modes**:
+  - **Add Mode**: Click the **Plus** icon to switch to Add mode. In this mode, you can add new tasks by pressing **Enter**.
+  - **Search Mode**: Click the **Search** icon to switch to Search mode. In this mode, you can dynamically search for tasks by typing in the input field. **Do not press Enter**; the search results will update automatically as you type.
+- **Categorize Tasks**:
+  - **All**: Shows all tasks (both active and completed).
+  - **Active**: Shows only active tasks (tasks that are not marked as completed).
+  - **Completed**: Shows only completed tasks (tasks that are marked as completed).
 
 ## GitHub Repository
-[https://github.com/am7876388/A-new-Todo-App](#)
+[GitHub Repository Link](https://github.com/am7876388/A-new-Todo-App)
 
 ## How to Run the Application
 Follow the steps below to set up and run the application:
@@ -33,54 +34,12 @@ Make sure you have the following installed on your system:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (package manager)
 
 ### Steps
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
-   git clone <repository-link>
-   cd <repository-folder>
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-   Or if you're using Yarn:
-   ```bash
-   yarn
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   Or with Yarn:
-   ```bash
-   yarn dev
-   ```
-4. Open your browser and go to:
-   ```
-   http://localhost:5173
-   ```
-
-### Build for Production
-To create a production build:
-```bash
-npm run build
-```
-Or with Yarn:
-```bash
-yarn build
-```
-
-The production build will be available in the `dist` folder.
-
-### Preview the Production Build
-To preview the production build locally:
-```bash
-npm run preview
-```
-Or with Yarn:
-```bash
-yarn preview
-```
-
-## License
-This project is open-source and available under the MIT License.
+   git clone https://github.com/am7876388/A-new-Todo-App
+   cd A-new-Todo-App
+2. **Install dependencies**:
+npm install
+3. **Start Development Server**:
+npm run dev
 
